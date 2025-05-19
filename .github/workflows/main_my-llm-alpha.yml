@@ -1,9 +1,0 @@
-- name: Install dependencies
-  run: |
-    cd backend
-    pip install -r requirements.txt
-
-- name: Start app
-  run: |
-    cd backend
-    gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
